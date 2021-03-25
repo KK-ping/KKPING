@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form id="a" >
+			<h3> 猜一个数字一个数（1-3）：</h3>
+			<input type="text" v-model="message" />
+				<h4 v-if="message==2">正确</h4>
+				<h4 v-else-if="message !=2">错误</h4>
+				<h4>快来玩游戏吧！！！！</h4>
+	
+		</form>
+		
+		<script>
+			new Vue({
+				el: "#a",
+				data:{
+					message:0
+				}
+				
+			})
+			
+		</script>
+		
+	</body>
+</html>
